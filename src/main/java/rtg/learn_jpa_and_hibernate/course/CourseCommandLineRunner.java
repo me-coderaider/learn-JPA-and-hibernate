@@ -28,6 +28,15 @@ public class CourseCommandLineRunner implements CommandLineRunner {
 		repository.deleteById(1l);
 
 		System.out.println(repository.findById(3l));
+		
+		System.out.println(repository.findAll());
+		System.out.println(repository.count());
+		
+		
+		System.out.println(repository.findByAuthor("Pankaj"));
+		
+		System.out.println(repository.findByName("Learn Java SpringData JPA"));		
+		
 	}
 
 }
