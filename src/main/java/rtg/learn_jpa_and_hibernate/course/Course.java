@@ -1,8 +1,15 @@
 package rtg.learn_jpa_and_hibernate.course;
 
-//@Component
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Course {
+	
+	@Id
 	private long id;
+	
+//	@Column(name="name") // for mapping fields of this entity to the columns of the table.
 	private String name;
 	private String author;
 
